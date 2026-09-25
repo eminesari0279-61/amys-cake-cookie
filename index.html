@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AMY'S Cake&Cookie — taze malzemelerle, sevgiyle hazırlanan butik kekler, kurabiyeler ve özel lezzetler." />
+    <meta name="theme-color" content="#f5efe4" />
+    <title>AMY'S Cake&Cookie | Tatlı Anların En Güzel Hali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="announcement">İstanbul içi siparişleriniz için bize ulaşın <span>•</span> Her lokmada mutluluk</div>
+    <header class="header" id="top">
+      <a class="logo" href="#top" aria-label="AMY'S ana sayfa"><strong>AMY'S</strong><span>CAKE <i>&amp;</i> COOKIE</span></a>
+      <nav class="nav" id="nav" aria-label="Ana menü">
+        <a class="active" href="#top">Ana Sayfa</a><a href="#urunler">Ürünler</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="searchButton" aria-label="Ara"><svg><use href="#icon-search"/></svg></button>
+        <button class="icon-btn account" aria-label="Kullanıcı hesabı"><svg><use href="#icon-user"/></svg></button>
+        <button class="icon-btn cart" id="cartButton" aria-label="Sepet"><svg><use href="#icon-bag"/></svg><b id="cartCount">0</b></button>
+        <button class="menu-button" id="menuButton" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">TATLI ANLARIN EN GÜZEL HALİ</p>
+          <h1><span>AMY'S</span> Cake <em>&amp;</em> Cookie</h1>
+          <p class="lead">Taze malzemelerle, sevgiyle hazırlanan lezzetler... Her kutuda sıcacık bir hikâye, her lokmada küçük bir mutluluk.</p>
+          <a class="button" href="#urunler">Ürünleri Keşfet <span>↗</span></a>
+          <div class="hero-notes"><span><b>100%</b> doğal malzeme</span><span><b>Günlük</b> taze üretim</span></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="El yapımı çikolatalı kurabiyeler">
+          <div class="olive-stamp">HANDMADE<br><strong>with love</strong><br>EST. 2019</div>
+          <svg class="cookie-art" viewBox="0 0 700 720" role="img" aria-label="Kurabiye illüstrasyonu">
+            <defs><filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".22"/></filter><radialGradient id="dough"><stop stop-color="#dca969"/><stop offset="1" stop-color="#a96735"/></radialGradient></defs>
+            <path d="M77 594C169 523 171 263 366 130c131-90 280 25 274 179-8 206-124 349-331 370-98 10-180-25-232-85Z" fill="#d8d1b5"/>
+            <g filter="url(#shadow)" transform="rotate(-12 380 350)">
+              <circle cx="340" cy="390" r="173" fill="url(#dough)"/><circle cx="340" cy="390" r="157" fill="none" stroke="#edc78b" stroke-width="5" opacity=".45"/>
+              <g fill="#4b281c"><circle cx="272" cy="308" r="23"/><circle cx="388" cy="291" r="17"/><circle cx="434" cy="386" r="26"/><circle cx="297" cy="425" r="18"/><circle cx="376" cy="484" r="25"/><circle cx="213" cy="398" r="14"/></g>
+              <g fill="#6f3d24"><circle cx="340" cy="347" r="11"/><circle cx="254" cy="487" r="12"/><circle cx="454" cy="479" r="12"/></g>
+            </g>
+            <g filter="url(#shadow)" transform="translate(40 -20) rotate(17 390 390)"><circle cx="460" cy="230" r="112" fill="#c9864c"/><g fill="#4a281c"><circle cx="424" cy="191" r="15"/><circle cx="496" cy="180" r="12"/><circle cx="514" cy="250" r="18"/><circle cx="435" cy="268" r="14"/></g></g>
+          </svg>
+          <span class="scribble">Taptaze<br/>ve nefis!</span>
+        </div>
+      </section>
+
+      <section class="categories section" aria-labelledby="category-title">
+        <div class="section-heading reveal"><p class="eyebrow">MUTLULUK MENÜSÜ</p><h2 id="category-title">Favorini seç, keyfine bak.</h2><p>Her damak tadına, her güzel ana özel.</p></div>
+        <div class="category-grid">
+          <a href="#urunler" class="category-card reveal"><span class="mini cake-mini">♢</span><h3>Kekler</h3><p>Yumuşacık ve bol lezzetli</p><b>Keşfet →</b></a>
+          <a href="#urunler" class="category-card featured reveal"><span class="mini">●</span><h3>Kurabiyeler</h3><p>Dışı çıtır, içi mutluluk</p><b>Keşfet →</b></a>
+          <a href="#urunler" class="category-card reveal"><span class="mini">♕</span><h3>Cupcake'ler</h3><p>Minik ama unutulmaz</p><b>Keşfet →</b></a>
+          <a href="#urunler" class="category-card reveal"><span class="mini">✦</span><h3>Özel Lezzetler</h3><p>Sadece AMY'S'e özel</p><b>Keşfet →</b></a>
+          <a href="#urunler" class="category-card reveal"><span class="mini">□</span><h3>Hediye Kutuları</h3><p>Sevdiklerine tatlı bir sürpriz</p><b>Keşfet →</b></a>
+        </div>
+      </section>
+
+      <section class="story section" id="hakkimizda">
+        <div class="story-art reveal"><div class="cake-illustration"><div class="cake-top"></div><div class="cake-layer one"></div><div class="cake-layer two"></div><div class="cake-layer three"></div><i>✿</i><i>✿</i><i>✿</i></div><p>made with<br><em>love</em></p></div>
+        <div class="story-copy reveal"><p class="eyebrow">BİZ KİMİZ?</p><h2>Küçük bir mutfakta başlayan <em>tatlı bir hikâye.</em></h2><p>AMY'S, güzel anların iyi bir tatlıyla daha da güzelleştiğine inanan bir hayalin eseri. Bizim için her tarif, özenle seçilmiş malzemelerin ve sevginin buluşması.</p><p>Geleneksel tatları modern dokunuşlarla yeniden yorumluyor, her siparişi sizin için özenle hazırlıyoruz.</p><a class="text-link" href="#iletisim">Hikayemizi Keşfet <span>→</span></a><div class="signature">Amy <small>Kurucu &amp; Pasta Şefi</small></div></div>
+      </section>
+
+      <section class="products section" id="urunler">
+        <div class="section-heading left reveal"><p class="eyebrow">SİZİN FAVORİLERİNİZ</p><h2>Öne Çıkan Ürünler</h2><p>En çok sevilen, tekrar tekrar sipariş verilen lezzetlerimiz.</p></div>
+        <div class="product-grid">
+          <article class="product-card reveal"><div class="product-image cookie-bg"><span class="badge">Çok Sevilen</span><div class="food cookie-food">●</div></div><div class="product-info"><small>KURABİYELER</small><h3>Kurabiye Çeşitleri</h3><p>Çikolatalı, fındıklı ve mevsimlik tatlarla.</p><button class="add-button" data-product="Kurabiye Çeşitleri">Sepete Ekle <span>+</span></button></div></article>
+          <article class="product-card reveal"><div class="product-image cake-bg"><div class="food cake-food">▲</div></div><div class="product-info"><small>KEKLER</small><h3>Kek Çeşitleri</h3><p>Her diliminde ev yapımı sıcacık lezzet.</p><button class="add-button" data-product="Kek Çeşitleri">Sepete Ekle <span>+</span></button></div></article>
+          <article class="product-card reveal"><div class="product-image cupcake-bg"><span class="badge new">Yeni</span><div class="food cupcake-food">♛</div></div><div class="product-info"><small>CUPCAKE'LER</small><h3>Cupcake'ler</h3><p>Kreması hafif, mutluluğu bir hayli büyük.</p><button class="add-button" data-product="Cupcake'ler">Sepete Ekle <span>+</span></button></div></article>
+          <article class="product-card reveal"><div class="product-image gift-bg"><div class="food gift-food">▣</div></div><div class="product-info"><small>HEDİYE</small><h3>Hediye Seçenekleri</h3><p>İçinden lezzet, dışından mutluluk taşar.</p><button class="add-button" data-product="Hediye Kutusu">Sepete Ekle <span>+</span></button></div></article>
+        </div>
+      </section>
+
+      <section class="benefits" id="iletisim">
+        <div><svg><use href="#icon-leaf"/></svg><span><b>Doğal ve Kaliteli</b>Malzemeler</span></div><div><span class="heart">♡</span><span><b>Sevgiyle</b>Hazırlanır</span></div><div><svg><use href="#icon-truck"/></svg><span><b>Evlere Servisimiz</b>Vardır</span></div><a href="https://wa.me/905555555555" target="_blank" rel="noreferrer"><span><b>Sipariş Ver</b>WhatsApp'tan ulaş</span><strong>→</strong></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main"><div><a class="logo light" href="#top"><strong>AMY'S</strong><span>CAKE <i>&amp;</i> COOKIE</span></a><p>Güzel anlara eşlik eden,<br>sevgiyle hazırlanmış lezzetler.</p></div><div><h4>Hızlı Menü</h4><a href="#top">Ana Sayfa</a><a href="#urunler">Ürünler</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></div><div><h4>Bize Ulaşın</h4><a href="tel:+905555555555">+90 555 555 55 55</a><a href="mailto:merhaba@amys.com">merhaba@amys.com</a><p>İstanbul, Türkiye</p></div><div><h4>Tatlı haberler alın</h4><p>Yeni lezzetleri ilk siz keşfedin.</p><form id="newsletter"><input type="email" required placeholder="E-posta adresiniz" aria-label="E-posta adresiniz"><button aria-label="Kaydol">→</button></form><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="https://wa.me/905555555555" aria-label="WhatsApp">wa</a></div></div></div>
+      <div class="footer-bottom"><span>© 2026 AMY'S Cake&Cookie. Tüm hakları saklıdır.</span><span>Sevgiyle hazırlandı ♡</span></div>
+    </footer>
+
+    <div class="search-panel" id="searchPanel" aria-hidden="true"><button id="closeSearch" aria-label="Aramayı kapat">×</button><label for="searchInput">Ne aramıştınız?</label><div><input id="searchInput" type="search" placeholder="Kurabiye, kek, cupcake..."><span>↵</span></div><p>Popüler: Çikolatalı kurabiye · Hediye kutusu · Cupcake</p></div>
+    <div class="toast" id="toast" role="status">Ürün sepetinize eklendi. <b>♡</b></div>
+
+    <svg class="svg-defs" aria-hidden="true"><symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></symbol><symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.5-5 3-7.5 7.5-7.5s7 2.5 7.5 7.5"/></symbol><symbol id="icon-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol><symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4C10 4 5 9 5 17c8 1 14-4 15-13Z"/><path d="M4 21c3-6 7-9 12-12"/></symbol><symbol id="icon-truck" viewBox="0 0 24 24"><path d="M2 5h13v12H2zM15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol></svg>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
